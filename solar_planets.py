@@ -1,0 +1,13 @@
+import cv2
+img=cv2.imread("C:/Users/user/Downloads/Python/Projects/New folder/solar-system.jpg")
+cv2.putText(img,"Sun",(100,100),cv2.FONT_HERSHEY_COMPLEX,1.5,(0,50,155))
+cv2.putText(img,"Mercury",(125,190),cv2.FONT_HERSHEY_PLAIN,0.7,(150,150,150))
+cv2.putText(img,"Venus",(190,170),cv2.FONT_HERSHEY_SCRIPT_SIMPLEX,0.7,(0,120,230))
+cv2.putText(img,"Earth",(275,160),cv2.FONT_HERSHEY_SIMPLEX,0.7,(255,150,0))
+cv2.putText(img,"Mars",(370,180),cv2.CALIB_CB_CLUSTERING,0.7,(0,50,255))
+cv2.putText(img,"Jupiter",(550,50),cv2.FONT_HERSHEY_TRIPLEX,0.7,(105,175,255))
+cv2.putText(img,"Saturn",(770,125),cv2.CAP_PROP_FPS,0.9,(150,200,255))
+cv2.putText(img,"Uranus",(950,140),cv2.CAP_OPENNI,0.7,(255,255,200))
+cv2.putText(img,"Neptune",(1090,140),cv2.CAP_PROP_XI_IS_COOLED,1.5,(205,0,0))
+cv2.imshow("Solar System", img)
+cv2.waitKey(0)
